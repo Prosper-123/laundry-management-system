@@ -1,13 +1,13 @@
-#include <QMainWindow>
 #include <QApplication>
-#include "../src/auth/auth.h"
+#include "auth.h"  // Including the Auth class, replace with MainWindow if needed
 
-int main(int argc, char *argv[]) {
-
+int main(int argc, char *argv[])
+{
     QApplication a(argc, argv);
 
-    // lets strt with showing the auth screens first
-    Auth authWindow;
-    auth.show();
-    return app.exec();
+    // Create an authentication screen or a main window
+    Auth authWindow;  // or MainWindow if you're starting with a main window
+    authWindow.show();  // Display the window
+
+    return a.exec();  // Start the application event loop
 }

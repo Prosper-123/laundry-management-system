@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+    <class>Auth</class>
+    <widget class="QWidget" name="Auth">
+        <property name="geometry">
+            <rect>
+                <x>0</x>
+                <y>0</y>
+                <width>400</width>
+                <height>300</height>
+            </rect>
+        </property>
+        <property name="windowTitle">
+            <string>Authentication</string>
+        </property>
+        <widget class="QWidget" name="centralWidget">
+            <layout class="QVBoxLayout" name="verticalLayout">
+                <!-- Username Field -->
+                <widget class="QLineEdit" name="usernameField">
+                    <property name="placeholderText">
+                        <string>Enter Username</string>
+                    </property>
+                </widget>
+
+                <!-- Password Field -->
+                <widget class="QLineEdit" name="passwordField">
+                    <property name="placeholderText">
+                        <string>Enter Password</string>
+                    </property>
+                    <property name="echoMode">
+                        <enum>QLineEdit::Password</enum>
+                    </property>
+                </widget>
+
+                <!-- Login Button -->
+                <widget class="QPushButton" name="loginButton">
+                    <property name="text">
+                        <string>Login</string>
+                    </property>
+                </widget>
+
+                <!-- Status Label -->
+                <widget class="QLabel" name="statusLabel">
+                    <property name="text">
+                        <string></string>
+                    </property>
+                </widget>
+            </layout>
+        </widget>
+    </widget>
+</ui>

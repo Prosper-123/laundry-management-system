@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+    <class>Dashboard</class>
+    <widget class="QMainWindow" name="Dashboard">
+        <property name="geometry">
+            <rect>
+                <x>0</x>
+                <y>0</y>
+                <width>800</width>
+                <height>600</height>
+            </rect>
+        </property>
+        <property name="windowTitle">
+            <string>Dashboard</string>
+        </property>
+        <widget class="QWidget" name="centralWidget">
+            <layout class="QVBoxLayout" name="mainLayout">
+                <!-- Sidebar for navigation -->
+                <widget class="QWidget" name="sidebarWidget">
+                    <layout class="QVBoxLayout" name="sidebarLayout">
+                        <!-- Buttons for different sections -->
+                        <widget class="QPushButton" name="btnPOS">
+                            <property name="text">
+                                <string>POS</string>
+                            </property>
+                        </widget>
+                        <widget class="QPushButton" name="btnServiceItems">
+                            <property name="text">
+                                <string>Service Items</string>
+                            </property>
+                        </widget>
+                        <widget class="QPushButton" name="btnReceipts">
+                            <property name="text">
+                                <string>Receipts</string>
+                            </property>
+                        </widget>
+                        <widget class="QPushButton" name="btnIncomeExpense">
+                            <property name="text">
+                                <string>Income & Expense</string>
+                            </property>
+                        </widget>
+                        <widget class="QPushButton" name="btnReports">
+                            <property name="text">
+                                <string>Reports</string>
+                            </property>
+                        </widget>
+                    </layout>
+                </widget>
+
+                <!-- Stacked Widget for different pages -->
+                <widget class="QStackedWidget" name="stackedWidget">
+                    <widget class="QWidget" name="POSPage">
+                        <layout class="QVBoxLayout" name="posLayout">
+                            <widget class="QLabel" name="posLabel">
+                                <property name="text">
+                                    <string>POS Page Content</string>
+                                </property>
+                            </widget>
+                        </layout>
+                    </widget>
+
+                    <widget class="QWidget" name="ServiceItemsPage">
+                        <layout class="QVBoxLayout" name="serviceItemsLayout">
+                            <widget class="QLabel" name="serviceItemsLabel">
+                                <property name="text">
+                                    <string>Service Items Page Content</string>
+                                </property>
+                            </widget>
+                        </layout>
+                    </widget>
+
+                    <widget class="QWidget" name="ReceiptsPage">
+                        <layout class="QVBoxLayout" name="receiptsLayout">
+                            <widget class="QLabel" name="receiptsLabel">
+                                <property name="text">
+                                    <string>Receipts Page Content</string>
+                                </property>
+                            </widget>
+                        </layout>
+                    </widget>
+
+                    <widget class="QWidget" name="IncomeExpensePage">
+                        <layout class="QVBoxLayout" name="incomeExpenseLayout">
+                            <widget class="QLabel" name="incomeExpenseLabel">
+                                <property name="text">
+                                    <string>Income & Expense Page Content</string>
+                                </property>
+                            </widget>
+                        </layout>
+                    </widget>
+
+                    <widget class="QWidget" name="ReportsPage">
+                        <layout class="QVBoxLayout" name="reportsLayout">
+                            <widget class="QLabel" name="reportsLabel">
+                                <property name="text">
+                                    <string>Reports Page Content</string>
+                                </property>
+                            </widget>
+                        </layout>
+                    </widget>
+                </widget>
+            </layout>
+        </widget>
+    </widget>
+</ui>

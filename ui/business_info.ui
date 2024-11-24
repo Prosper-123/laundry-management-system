@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>BusinessInfo</class>
+ <widget class="QWidget" name="BusinessInfo">
+  <property name="geometry">
+   <rect>
+    <width>400</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Business Information</string>
+  </property>
+  <layout class="QFormLayout">
+   <item row="0" column="0">
+    <widget class="QLabel" name="labelBusinessName">
+     <property name="text">
+      <string>Business Name:</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="1">
+    <widget class="QLineEdit" name="lineEditBusinessName"/>
+   </item>
+   <item row="1" column="0">
+    <widget class="QLabel" name="labelBusinessAddress">
+     <property name="text">
+      <string>Business Address:</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="1">
+    <widget class="QLineEdit" name="lineEditBusinessAddress"/>
+   </item>
+   <item row="2" column="0">
+    <widget class="QLabel" name="labelBusinessContact">
+     <property name="text">
+      <string>Contact Info:</string>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="1">
+    <widget class="QLineEdit" name="lineEditBusinessContact"/>
+   </item>
+   <item row="3" column="1">
+    <widget class="QPushButton" name="saveButton">
+     <property name="text">
+      <string>Save</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+</ui>

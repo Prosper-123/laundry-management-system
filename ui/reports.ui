@@ -1,21 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>POS</class>
- <widget class="QWidget" name="POS">
+ <class>Reports</class>
+ <widget class="QWidget" name="Reports">
   <property name="geometry">
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>600</width>
-    <height>400</height>
+    <width>800</width>
+    <height>600</height>
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Point of Sale</string>
+   <string>Reports</string>
   </property>
   <layout class="QVBoxLayout" name="verticalLayout">
    <item>
-    <widget class="QTableWidget" name="tableWidgetItems">
+    <widget class="QLabel" name="labelTitle">
+     <property name="text">
+      <string>Reports Dashboard</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>14</pointsize>
+       <bold>true</bold>
+      </font>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QTableWidget" name="tableWidgetReports">
      <property name="columnCount">
       <number>4</number>
      </property>
@@ -24,57 +40,39 @@
      </property>
      <column>
       <property name="text">
-       <string>Item</string>
+       <string>Date</string>
       </property>
      </column>
      <column>
       <property name="text">
-       <string>Price</string>
+       <string>Type</string>
       </property>
      </column>
      <column>
       <property name="text">
-       <string>Quantity</string>
+       <string>Amount</string>
       </property>
      </column>
      <column>
       <property name="text">
-       <string>Total</string>
+       <string>Details</string>
       </property>
      </column>
     </widget>
    </item>
    <item>
-    <layout class="QHBoxLayout">
+    <layout class="QHBoxLayout" name="horizontalLayout">
      <item>
-      <widget class="QLabel" name="labelTotal">
+      <widget class="QPushButton" name="buttonLoadReports">
        <property name="text">
-        <string>Total:</string>
+        <string>Load Reports</string>
        </property>
       </widget>
      </item>
      <item>
-      <widget class="QLineEdit" name="lineEditTotal">
-       <property name="readOnly">
-        <bool>true</bool>
-       </property>
-      </widget>
-     </item>
-    </layout>
-   </item>
-   <item>
-    <layout class="QHBoxLayout">
-     <item>
-      <widget class="QPushButton" name="buttonAddItem">
+      <widget class="QPushButton" name="buttonExportReports">
        <property name="text">
-        <string>Add Item</string>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QPushButton" name="buttonCompleteSale">
-       <property name="text">
-        <string>Complete Sale</string>
+        <string>Export to CSV</string>
        </property>
       </widget>
      </item>

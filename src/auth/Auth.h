@@ -5,20 +5,29 @@
 #include <QPushButton>
 #include <QLineEdit>
 #include <QLabel>
+#include <QMessageBox>
 
-class Auth : public QWidget {
+namespace Ui {
+class Auth;
+}
+
+class Auth : public QWidget
+{
     Q_OBJECT
 
 public:
-    Auth(QWidget *parent = nullptr);
+    explicit Auth(QWidget *parent = nullptr);
+    ~Auth();
 
 private slots:
-    void handleLogin();
+    void onLoginButtonClicked();
 
 private:
-    QLineEdit *emailInput;
-    QLineEdit *passwordInput;
+    Ui::Auth *ui;
+    QLineEdit *usernameField;
+    QLineEdit *passwordField;
     QPushButton *loginButton;
+    QLabel *statusLabel;
 };
 
-#endif
+#endif // AUTH_H
